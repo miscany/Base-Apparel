@@ -140,6 +140,7 @@ input:-webkit-autofill:active {
   .flex-one {
     flex: 2;
     padding: 5% 15% 20% 15%;
+    background: url(./images/bg-pattern-desktop.svg);
   }
 
   .flex-two {
