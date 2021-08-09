@@ -16,25 +16,30 @@
   </head>
   <body>
     <div class="main">
-      <picture>
-        <img src="./images/logo.svg" />
+      <picture class="hide-desktop">
+        <img src="./images/logo.svg" alt="main-logo" />
       </picture>
 
       <div class="container">
-        <article>
-          <img src="./images/hero-mobile.jpg" />
+        <article class="hide-desktop">
+          <img src="./images/hero-mobile.jpg" alt="mobile-girl" />
         </article>
 
-        <article class="flex-two">
-          <header>
-            <h1>WE'RE</h1>
-            <h1>COMING SOON</h1>
-          </header>
-          <p class="main-para">
-            Hello fellow shoppers! We're current building our new fashion store.
-            Add your email below to stay up-to-date with accouncements and our
-            launch deals.
-          </p>
+        <article class="flex-one">
+          <picture class="hide-mobile logo">
+            <img src="./images/logo.svg" alt="main-logo" />
+          </picture>
+          <div class="wrapper-content">
+            <header>
+              <h1>WE'RE</h1>
+              <h1>COMING SOON</h1>
+            </header>
+            <p class="main-para">
+              Hello fellow shoppers! We're current building our new fashion
+              store. Add your email below to stay up-to-date with accouncements
+              and our launch deals.
+            </p>
+          </div>
 
           <div class="email-field">
             <input id="email-input" type="email" placeholder="Email Address" />
@@ -44,6 +49,12 @@
             </div>
           </div>
         </article>
+
+        <div class="flex-two">
+          <picture>
+            <img src="./images/hero-desktop.jpg" alt="desktop-girl" />
+          </picture>
+        </div>
       </div>
     </div>
   </body>
