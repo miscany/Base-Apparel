@@ -2,8 +2,120 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
   font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+.main {
+  background-color: #fefcfd;
+}
+
+.main picture img {
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container article img {
+  width: 100%;
+}
+
+.flex-two {
+  padding: 60px 35px 100px;
+  text-align: center;
+}
+
+.flex-two header {
+  line-height: 2.4em;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+.flex-two header h1:nth-of-type(1) {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.flex-two p.main-para {
+  margin-top: 1.5em;
+  line-height: 1.5em;
+  color: hsl(0, 36%, 70%);
+}
+
+.email-field {
+  margin-top: 2em;
+  border: 1px solid #d3d3d3;
+  border-radius: 2em;
+  height: 50px;
+}
+.email-field input {
+  color: hsl(0, 36%, 70%);
+  background-color: white;
+  margin-top: 15px;
+  margin-left: 5%;
+
+  border: none;
+  outline: none;
+  width: 70%;
+}
+
+.email-field input::placeholder {
+  color: #d3d3d3;
+}
+
+button {
+  border-radius: 2em;
+  padding: 10px 25px;
+  background-color: hsl(0, 36%, 70%);
+  height: 100%;
+  width: 25%;
+  border: none;
+  float: right;
+  overflow: auto;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 5px 5px 0px black;
+}
+button::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+button img {
+  display: inline-block;
+  height: 100%;
+  width: 20px;
+  height: 20px;
+  border-radius: 2em;
+}
+
+div.error {
+  margin-top: 1.5em;
+  text-align: left;
+  margin-left: 15px;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+@media screen and (min-width: 1052px) {
+  div.error {
+    color: blue;
+  }
 }
